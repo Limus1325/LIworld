@@ -36,7 +36,15 @@
 <script type="module">
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js';
 import { getFirestore, collection, addDoc, serverTimestamp } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js';
-const firebaseConfig={apiKey:'PASTE_FIREBASE_WEB_API_KEY',authDomain:'PASTE_PROJECT.firebaseapp.com',projectId:'PASTE_PROJECT_ID',appId:'PASTE_APP_ID'};
+const firebaseConfig = {
+  apiKey: "AIzaSyBFGwp58RAA07iqczEAwuOtChE3eAFDby8",
+  authDomain: "liworld.firebaseapp.com",
+  projectId: "liworld",
+  storageBucket: "liworld.firebasestorage.app",
+  messagingSenderId: "339709912399",
+  appId: "1:339709912399:web:24ae527e78ce00bd69113a",
+  measurementId: "G-G37PF9GGEW"
+};
 const modal=document.getElementById('supportModal'), form=document.getElementById('supportForm'), result=document.getElementById('supportResult');
 const configured=!Object.values(firebaseConfig).some(v=>v.includes('PASTE_'));
 let db=null; if(configured){db=getFirestore(initializeApp(firebaseConfig));}

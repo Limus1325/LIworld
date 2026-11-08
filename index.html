@@ -1,41 +1,274 @@
+
 <!doctype html>
-<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#090812"><title>LIworld — Играй. Участвуй. Оставь след.</title><link rel="stylesheet" href="style.css"></head>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090812">
+  <title>LIworld — Играй. Участвуй. Оставь след.</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .discord-button {
+      display: inline-block;
+      text-decoration: none;
+      background: #5865F2;
+      color: #fff;
+      border: 1px solid #5865F2;
+      transition: .2s ease;
+    }
+    .discord-button:hover {
+      background: #4752c4;
+      transform: translateY(-2px);
+    }
+    .hero .discord-button {
+      margin-top: 12px;
+    }
+    .footer-discord {
+      color: #a99aff;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .footer-discord:hover {
+      color: #fff;
+    }
+    header nav {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+  </style>
+</head>
+
 <body>
-<header><a class="logo" href="#top"><b>LI</b> LI<span>world</span></a><nav><a href="#games">Игры</a><a href="#events">Ивенты</a><a href="#footprint">Оставить след</a><a href="#help">Поддержка</a></nav></header>
+
+<header>
+  <a class="logo" href="#top"><b>LI</b> LI<span>world</span></a>
+  <nav>
+    <a href="#games">Игры</a>
+    <a href="#events">Ивенты</a>
+    <a href="#footprint">Оставить след</a>
+    <a href="#help">Поддержка</a>
+    <a class="button discord-button"
+       href="https://discord.gg/KQ5htJr3ph"
+       target="_blank" rel="noopener noreferrer">
+       Войти в Discord ↗
+    </a>
+  </nav>
+</header>
+
 <main id="top">
-<section class="hero"><div class="eyebrow">ONE WORLD — ALL GAMES</div><h1>Не просто играй.<br><span>Оставь свой след.</span></h1><p>Игровое сообщество LIworld: собственные события, игровые достижения, встречи и большие планы для разных игр.</p><a class="button" href="#events">Смотреть активности ↘</a><div class="hero-mark">LI<br><small>WORLD</small></div></section>
-<section class="section" id="games"><div class="eyebrow">НАШИ НАПРАВЛЕНИЯ</div><h2>Выбирай свою игру</h2><div class="grid games">
-<article><i>R</i><h3>Roblox</h3><p>Встречи, игровые режимы, тематические события и собственные проекты.</p></article>
-<article><i>▦</i><h3>Minecraft</h3><p>Собственный мир LIworld, постройки, квесты и памятные места.</p></article>
-<article><i>★</i><h3>Brawl Stars</h3><p>Командные активности, дружеские матчи и турниры.</p></article>
-<article><i>Ⅱ</i><h3>Standoff 2</h3><p>Матчи сообщества, командные встречи и соревнования.</p></article>
-<article><i>CS</i><h3>CS2</h3><p>Игры стаком, мини-турниры и внутренняя таблица результатов.</p></article></div></section>
-<section class="section" id="events"><div class="eyebrow">СОБЫТИЯ СООБЩЕСТВА</div><h2>Ивенты внутри игр</h2><p class="lead">Здесь будут анонсы настоящих мероприятий: дата, игра, правила, награды и результаты.</p><div class="grid events">
-<article><span class="eventicon">🏗️</span><small>MINECRAFT</small><h3>Постройка LIworld</h3><p>Создадим конкурс на лучшую постройку подходящуу под LIworld!</p><label>ИДЕЯ ИВЕНТА</label></article>
-<article><span class="eventicon">🏆</span><small>ROBLOX / ДРУГИЕ ИГРЫ</small><h3>День сообщества</h3><p>Соберём участников на совместную игровую встречу и испытания.</p><label>ИДЕЯ ИВЕНТА</label></article>
-<article><span class="eventicon">🎯</span><small>CS2 / STANDOFF 2 / BRAWL STARS</small><h3>Кубок LIworld</h3><p>Командные матчи, таблица результатов и финал сообщества.</p><label>ИДЕЯ ИВЕНТА</label></article></div></section>
-<section class="section dark" id="footprint"><div class="eyebrow">ТВОЯ ИСТОРИЯ В LIWORLD</div><h2>Оставь след в игре</h2><p class="lead">Не лайк и не комментарий — настоящий след в игровом мире.</p><div class="grid footprints"><article><b>01 / Постройка</b><p>Твоё имя на памятной постройке или в городе LIworld.</p></article><article><b>02 / Зал славы</b><p>Рекорд, победа или достижение на стене почёта.</p></article><article><b>03 / Событие</b><p>Участие в ивенте, которое останется в истории сообщества.</p></article><article><b>04 / Создатель</b><p>Помог создать карту, режим, мероприятие или проект.</p></article></div></section>
-<section class="section help" id="help"><div><div class="eyebrow">НУЖНА ПОМОЩЬ?</div><h2>Мы на связи</h2><p>По вопросам сайта и сообщества напиши администрации LIworld.</p></div><button class="button" id="openSupport" type="button">Написать в поддержку</button></section>
+
+  <section class="hero">
+    <div class="eyebrow">ONE WORLD — ALL GAMES</div>
+    <h1>Не просто играй.<br><span>Оставь свой след.</span></h1>
+    <p>
+      Игровое сообщество LIworld: собственные события,
+      игровые достижения, встречи и большие планы для разных игр.
+    </p>
+
+    <a class="button" href="#events">Смотреть активности ↘</a>
+
+    <br>
+
+    <a class="button discord-button"
+       href="https://discord.gg/KQ5htJr3ph"
+       target="_blank" rel="noopener noreferrer">
+       Присоединиться к LIworld ↗
+    </a>
+
+    <div class="hero-mark">LI<br><small>WORLD</small></div>
+  </section>
+
+  <section class="section" id="games">
+    <div class="eyebrow">НАШИ НАПРАВЛЕНИЯ</div>
+    <h2>Выбирай свою игру</h2>
+
+    <div class="grid games">
+      <article>
+        <i>R</i>
+        <h3>Roblox</h3>
+        <p>Встречи, игровые режимы, тематические события и собственные проекты.</p>
+      </article>
+
+      <article>
+        <i>▦</i>
+        <h3>Minecraft</h3>
+        <p>Собственный мир LIworld, постройки, квесты и памятные места.</p>
+      </article>
+
+      <article>
+        <i>★</i>
+        <h3>Brawl Stars</h3>
+        <p>Командные активности, дружеские матчи и турниры.</p>
+      </article>
+
+      <article>
+        <i>Ⅱ</i>
+        <h3>Standoff 2</h3>
+        <p>Матчи сообщества, командные встречи и соревнования.</p>
+      </article>
+
+      <article>
+        <i>CS</i>
+        <h3>CS2</h3>
+        <p>Игры стаком, мини-турниры и внутренняя таблица результатов.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="events">
+    <div class="eyebrow">СОБЫТИЯ СООБЩЕСТВА</div>
+    <h2>Ивенты внутри игр</h2>
+    <p class="lead">
+      Здесь будут анонсы настоящих мероприятий:
+      дата, игра, правила, награды и результаты.
+    </p>
+
+    <div class="grid events">
+      <article>
+        <span class="eventicon">🏗️</span>
+        <small>MINECRAFT</small>
+        <h3>Постройка LIworld</h3>
+        <p>Создадим конкурс на лучшую постройку, подходящую под LIworld!</p>
+        <label>ИДЕЯ ИВЕНТА</label>
+      </article>
+
+      <article>
+        <span class="eventicon">🏆</span>
+        <small>ROBLOX / ДРУГИЕ ИГРЫ</small>
+        <h3>День сообщества</h3>
+        <p>Соберём участников на совместную игровую встречу и испытания.</p>
+        <label>ИДЕЯ ИВЕНТА</label>
+      </article>
+
+      <article>
+        <span class="eventicon">🎯</span>
+        <small>CS2 / STANDOFF 2 / BRAWL STARS</small>
+        <h3>Кубок LIworld</h3>
+        <p>Командные матчи, таблица результатов и финал сообщества.</p>
+        <label>ИДЕЯ ИВЕНТА</label>
+      </article>
+    </div>
+  </section>
+
+  <section class="section dark" id="footprint">
+    <div class="eyebrow">ТВОЯ ИСТОРИЯ В LIWORLD</div>
+    <h2>Оставь след в игре</h2>
+    <p class="lead">Не лайк и не комментарий — настоящий след в игровом мире.</p>
+
+    <div class="grid footprints">
+      <article>
+        <b>01 / Постройка</b>
+        <p>Твоё имя на памятной постройке или в городе LIworld.</p>
+      </article>
+
+      <article>
+        <b>02 / Зал славы</b>
+        <p>Рекорд, победа или достижение на стене почёта.</p>
+      </article>
+
+      <article>
+        <b>03 / Событие</b>
+        <p>Участие в ивенте, которое останется в истории сообщества.</p>
+      </article>
+
+      <article>
+        <b>04 / Создатель</b>
+        <p>Помог создать карту, режим, мероприятие или проект.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section help" id="help">
+    <div>
+      <div class="eyebrow">НУЖНА ПОМОЩЬ?</div>
+      <h2>Мы на связи</h2>
+      <p>По вопросам сайта и сообщества напиши администрации LIworld.</p>
+    </div>
+
+    <button class="button" id="openSupport" type="button">
+      Написать в поддержку
+    </button>
+  </section>
+
 </main>
+
 <div class="support-modal" id="supportModal" aria-hidden="true">
- <section class="support-dialog" role="dialog" aria-modal="true" aria-labelledby="supportTitle">
-  <button class="support-close" id="closeSupport" type="button" aria-label="Закрыть">×</button>
-  <div class="eyebrow">LIWORLD / HELP DESK</div><h2 id="supportTitle">Обращение в поддержку</h2>
-  <p>Опиши проблему — обращение попадёт в очередь поддержки LIworld.</p>
-  <form id="supportForm">
-   <label>Твой ник<input id="supportName" maxlength="80" required placeholder="Ник в Discord"></label>
-   <label>Email для ответа<input id="supportEmail" type="email" maxlength="160" required placeholder="you@example.com"></label>
-   <label>Тема обращения<input id="supportSubject" maxlength="120" required placeholder="Например: проблема с сайтом"></label>
-   <label>Сообщение<textarea id="supportMessage" maxlength="3000" rows="5" required placeholder="Подробно опиши, что произошло..."></textarea></label>
-   <button class="button" id="sendSupport" type="submit">Отправить обращение</button>
-   <div class="support-result" id="supportResult" aria-live="polite"></div>
-  </form>
- </section>
+  <section class="support-dialog" role="dialog" aria-modal="true"
+           aria-labelledby="supportTitle">
+
+    <button class="support-close" id="closeSupport"
+            type="button" aria-label="Закрыть">×</button>
+
+    <div class="eyebrow">LIWORLD / HELP DESK</div>
+    <h2 id="supportTitle">Обращение в поддержку</h2>
+    <p>Опиши проблему — обращение попадёт в очередь поддержки LIworld.</p>
+
+    <form id="supportForm">
+      <label>
+        Твой ник
+        <input id="supportName" maxlength="80" required
+               placeholder="Ник в Discord">
+      </label>
+
+      <label>
+        Email для ответа
+        <input id="supportEmail" type="email" maxlength="160"
+               required placeholder="you@example.com">
+      </label>
+
+      <label>
+        Тема обращения
+        <input id="supportSubject" maxlength="120" required
+               placeholder="Например: проблема с сайтом">
+      </label>
+
+      <label>
+        Сообщение
+        <textarea id="supportMessage" maxlength="3000" rows="5"
+                  required placeholder="Подробно опиши, что произошло..."></textarea>
+      </label>
+
+      <button class="button" id="sendSupport" type="submit">
+        Отправить обращение
+      </button>
+
+      <div class="support-result" id="supportResult" aria-live="polite"></div>
+    </form>
+  </section>
 </div>
-<footer><a class="logo" href="#top"><b>LI</b> LI<span>world</span></a><span>Твой мир игр и общения.</span><small>© <span id="year"></span> LIworld</small></footer><script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+
+<footer>
+  <a class="logo" href="#top"><b>LI</b> LI<span>world</span></a>
+  <span>Твой мир игр и общения.</span>
+
+  <a class="footer-discord"
+     href="https://discord.gg/KQ5htJr3ph"
+     target="_blank" rel="noopener noreferrer">
+    Discord ↗
+  </a>
+
+  <small>© <span id="year"></span> LIworld</small>
+</footer>
+
+<script>
+  document.getElementById('year').textContent =
+    new Date().getFullYear();
+</script>
+
 <script type="module">
-import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js';
-import { getFirestore, collection, addDoc, serverTimestamp } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js';
+import { initializeApp } from
+  'https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js';
+
+import {
+  getFirestore,
+  collection,
+  addDoc,
+  serverTimestamp
+} from
+  'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js';
+
 const firebaseConfig = {
   apiKey: "AIzaSyBFGwp58RAA07iqczEAwuOtChE3eAFDby8",
   authDomain: "liworld.firebaseapp.com",
@@ -45,21 +278,81 @@ const firebaseConfig = {
   appId: "1:339709912399:web:24ae527e78ce00bd69113a",
   measurementId: "G-G37PF9GGEW"
 };
-const modal=document.getElementById('supportModal'), form=document.getElementById('supportForm'), result=document.getElementById('supportResult');
-const configured=!Object.values(firebaseConfig).some(v=>v.includes('PASTE_'));
-let db=null; if(configured){db=getFirestore(initializeApp(firebaseConfig));}
-document.getElementById('openSupport').addEventListener('click',()=>{modal.classList.add('open');modal.setAttribute('aria-hidden','false');document.getElementById('supportName').focus();});
-function closeModal(){modal.classList.remove('open');modal.setAttribute('aria-hidden','true');}
-document.getElementById('closeSupport').addEventListener('click',closeModal);
-modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});
-document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
-form.addEventListener('submit',async e=>{e.preventDefault();result.textContent='';
- if(!configured){result.textContent='Форма пока не подключена: владелец должен добавить Firebase config.';return;}
- const btn=document.getElementById('sendSupport');btn.disabled=true;btn.textContent='Отправляем…';
- try{await addDoc(collection(db,'tickets'),{name:document.getElementById('supportName').value.trim(),email:document.getElementById('supportEmail').value.trim(),subject:document.getElementById('supportSubject').value.trim(),message:document.getElementById('supportMessage').value.trim(),status:'open',createdAt:serverTimestamp()});
- form.reset();result.textContent='Обращение отправлено! Команда поддержки увидит его в панели.';
- }catch(err){result.textContent='Не удалось отправить обращение. Попробуй позже.';}
- finally{btn.disabled=false;btn.textContent='Отправить обращение';}
+
+const modal = document.getElementById('supportModal');
+const form = document.getElementById('supportForm');
+const result = document.getElementById('supportResult');
+
+const configured = !Object.values(firebaseConfig)
+  .some(v => v.includes('PASTE_'));
+
+let db = null;
+
+if (configured) {
+  db = getFirestore(initializeApp(firebaseConfig));
+}
+
+document.getElementById('openSupport').addEventListener('click', () => {
+  modal.classList.add('open');
+  modal.setAttribute('aria-hidden', 'false');
+  document.getElementById('supportName').focus();
+});
+
+function closeModal() {
+  modal.classList.remove('open');
+  modal.setAttribute('aria-hidden', 'true');
+}
+
+document.getElementById('closeSupport')
+  .addEventListener('click', closeModal);
+
+modal.addEventListener('click', e => {
+  if (e.target === modal) closeModal();
+});
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeModal();
+});
+
+form.addEventListener('submit', async e => {
+  e.preventDefault();
+  result.textContent = '';
+
+  if (!configured) {
+    result.textContent =
+      'Форма пока не подключена: владелец должен добавить Firebase config.';
+    return;
+  }
+
+  const btn = document.getElementById('sendSupport');
+  btn.disabled = true;
+  btn.textContent = 'Отправляем…';
+
+  try {
+    await addDoc(collection(db, 'tickets'), {
+      name: document.getElementById('supportName').value.trim(),
+      email: document.getElementById('supportEmail').value.trim(),
+      subject: document.getElementById('supportSubject').value.trim(),
+      message: document.getElementById('supportMessage').value.trim(),
+      status: 'open',
+      createdAt: serverTimestamp()
+    });
+
+    form.reset();
+    result.textContent =
+      'Обращение отправлено! Команда поддержки увидит его в панели.';
+
+  } catch (err) {
+    console.error(err);
+    result.textContent =
+      'Не удалось отправить обращение. Попробуй позже.';
+
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'Отправить обращение';
+  }
 });
 </script>
-</body></html>
+
+</body>
+</html>
